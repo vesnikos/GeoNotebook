@@ -14,7 +14,7 @@ RUN conda install --quiet --yes -c conda-forge \
     conda clean -tipsy
 
 
-RUN ln -s /home/jovyan/work /work
+RUN sudo ln -s /home/jovyan/work /work
 
 # Configure container startup
 ENTRYPOINT ["tini", "--"]
